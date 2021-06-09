@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Linkmi</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </head>
+  <body class="index is-preload">
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header" class="alt">
+        <h1 id="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="LinkMi" height="40" />
+          </a>
+        </h1>
+        <nav id="nav">
+          <ul>
+            <li>
+              <button data-toggle="modal" data-target="#signUp">
+                <a>
+                  Pre Sign Up
+                </a>
+              </button>
+            </li>
+            <li><a href="#main" class="fit scrolly">Features</a></li>
+            <li><a href="#about" class="fit scrolly">About</a></li>
+            <li><a href="#contact" class="fit scrolly">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Banner -->
+      <section id="background">
+        <!--
+						".inner" is set up as an inline-block so it automatically expands
+						in both directions to fit whatever's inside it. This means it won't
+						automatically wrap lines, so be sure to use line breaks where
+						appropriate (<br />).
+					-->
+        <div class="inner">
+          <header>
+            <img src="images/center-logo.png" alt="" class="center-logo" />
+            <div class="social-icons">
+              <a href="https://www.snapchat.com/add/linkmiapp" target="_blank">
+                <img src="images/snapchat.png" alt="" height="46" />
+              </a>
+              <a href="https://www.facebook.com/LiNKMiapp/" target="_blank">
+                <img src="images/fb-icon.png" alt="" height="46" />
+              </a>
+              <a href="https://www.instagram.com/LINKMI/" target="_blank">
+                <img src="images/insta-logo.png" alt="" height="46" />
+              </a>
+              <a href="https://twitter.com/LINKMIAPP" target="_blank">
+                <img src="images/twitter-logo.png" alt="" height="46" />
+              </a>
+              <a href="mailto:contact@linkmi.com" target="_top">
+                <img src="images/email-icon.png" alt="" height="46" />
+              </a>
+            </div>
+          </header>
+          <div class="row subheading">
+            <div class="col-6 left">
+              <p>The worlds fastest way to connect!</p>
+            </div>
+            <div class="col-6 right">
+              <p>
+                Connect with friends faster by scanning your personalised QR
+                code to instantly select, synchronise & share all social media
+                platforms.
+              </p>
+            </div>
+          </div>
+          <div class="arrow-down">
+            <a href="#main" class="fit scrolly">
+              <img src="images/arrow.png" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <article id="main">
+          <div class="screen">
+            <img src="images/screen.png" alt="" class="screen-image" />
+            <div class="register-btn-container">
+              <button class="button" data-toggle="modal" data-target="#signUp">
+                Register Now!
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <div class="why-linkmi" id="about">
+          <img src="images/why-linkmi.png" alt="" />
+          <h2>Why Linkmi?</h2>
+          <p>
+            LiNKMi was created for the sole purpose of fast effective social
+            networking.  We seek to revolutionise the way we share each other's
+            contact information by giving you the power to connect the world
+            through one app!<br /><br />
+            You control the information you choose to share by personalising
+            your QR code. We allow you to add one contact across 16 different
+            platforms in a one touch scan!
+          </p>
+          <button class="button" data-toggle="modal" data-target="#signUp">
+            Reserve Your Username
+          </button>
+        </div>
+
+        <div class="wrapper container lets-talk" id="contact">
+          <div class="form-header">
+            <h2>Lets Talk</h2>
+            <p>
+              Have a question or comment? We are happy to help out, otherwise
+              <span class="manualModal">Pre-Signup here!</span>
+            </p>
+          </div>
+          <form action="POST" data-netlify="true" id="contactForm">
+            <div class="row gtr-50">
+              <div class="col-6 pl-0 input-cont">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="col-6 input-cont">
+                <input type="email" name="email" placeholder="Email" required />
+              </div>
+              <div class="col-6 pl-0 input-cont">
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  rows="6"
+                  required
+                ></textarea>
+              </div>
+              <div class="col-6 input-cont">
+                <input type="number" name="mobile" placeholder="Mobile" />
+                <div class="recaptcha">
+                  <div data-netlify-recaptcha="true"></div>
+                </div>
+              </div>
+              <div class="submit-form-btn">
+                <button type="submit" class="button">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <p class="copyright">
+            <span>&copy; Copyright 2020 Linkmi</span>
+            <span>&copy; All rights reserved | Privacy Policy</span>
+            <br><span>Mobile App Development by <a href="https://www.productdone.com/" target="_blank">ProductDone</a></span>
+          </p>
+          <div class="footer-logo">
+            <img src="images/footer-logo.png" alt="" />
+          </div>
+          <div class="coming-soon">
+            <p>Coming soon to</p>
+            <img src="images/phones.png" alt="" />
+          </div>
+        </footer>
+      </section>
+
+      <!-- Sign Up Modal -->
+      <div class="modal fade" id="signUp" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+              <h4 class="modal-title">
+                Sign up now for future access and updates
+              </h4>
+            </div>
+            <div class="modal-body">
+              <form action="POST" data-netlify="true" id="preSignUp">
+                <input
+                  type="text"
+                  name="firstName"
+                  placeholder="Firstname"
+                  required
+                />
+                <input
+                  type="text"
+                  name="lastName"
+                  placeholder="Lastname"
+                  required
+                />
+                <input
+                  type="text"
+                  name="userName"
+                  placeholder="Username"
+                  maxlength="30"
+                  required
+                />
+                <input type="email" name="email" placeholder="Email" required />
+                <input type="submit" class="special button" value="Submit" />
+                <p class="form-footer">
+                  By signing up, you give us permission to email you about our
+                  product and service - don't worry, we make it very easy to
+                  unsubscribe if its not your thing.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.min.js"></script>
+  </body>
+</html>
